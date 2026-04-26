@@ -359,8 +359,19 @@
     
 
     <div class="nav-cta-container">
-      <a href="/contact" class="nav-cta-btn">Contact</a>
+  <div class="lang-switcher" style="position:relative; display:inline-block;">
+    <button class="lang-switcher-btn" onclick="this.parentElement.querySelector('.lang-dropdown').classList.toggle('open')" style="background:var(--primary);color:#fff;border:none;border-radius:var(--radius-btn);padding:8px 14px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:6px;">
+      🌐 Language ▾
+    </button>
+    <div class="lang-dropdown" style="display:none;position:absolute;top:110%;right:0;background:#fff;border:1px solid var(--border-light);border-radius:var(--radius-card);box-shadow:var(--shadow-card);min-width:150px;z-index:9999;overflow:hidden;">
+      <a href="/ar/" style="display:block;padding:10px 16px;text-decoration:none;color:var(--text-dark);font-size:14px;border-bottom:1px solid var(--border-light);">🇸🇦 العربية</a>
+      <a href="/fr/" style="display:block;padding:10px 16px;text-decoration:none;color:var(--text-dark);font-size:14px;border-bottom:1px solid var(--border-light);">🇫🇷 Français</a>
+      <a href="/es/" style="display:block;padding:10px 16px;text-decoration:none;color:var(--text-dark);font-size:14px;border-bottom:1px solid var(--border-light);">🇪🇸 Español</a>
+      <a href="/tr/" style="display:block;padding:10px 16px;text-decoration:none;color:var(--text-dark);font-size:14px;">🇹🇷 Türkçe</a>
     </div>
+  </div>
+  <a href="/contact" class="nav-cta-btn">Contact</a>
+</div>
   </div>
 </nav>
 <script>
